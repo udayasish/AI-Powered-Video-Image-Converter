@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import { CldImage } from "next-cloudinary";
-import { log } from "console";
+
 
 const socialFormats = {
   "Instagram Square (1:1)": { width: 1080, height: 1080, aspectRatio: "1:1" },
@@ -13,7 +13,7 @@ const socialFormats = {
 
 type SocialFormat = keyof typeof socialFormats;
 
-function page() {
+function SocialShare() {
   const [uploadedImage, setUploadedImage] = useState<string | null>(null);
   const [selectedFormat, setSelectedFormat] = useState<SocialFormat>(
     "Instagram Square (1:1)"
@@ -159,4 +159,4 @@ function page() {
   );
 }
 
-export default page;
+export default SocialShare;

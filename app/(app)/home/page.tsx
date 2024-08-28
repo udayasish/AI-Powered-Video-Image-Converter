@@ -3,7 +3,7 @@ import React, {useState, useEffect, useCallback} from 'react'
 import VideoCard from '@/components/VideoCard'
 import Video from '@/types'
 
-function page() {
+function Home() {
   const [videos, setVideos] = useState<Video[]>([])
   const [error, setError] = useState<string | null>(null)
   const [loading, setLoading] = useState<boolean>(true)
@@ -72,4 +72,4 @@ return (
 );
 }
 
-export default page
+export default Home

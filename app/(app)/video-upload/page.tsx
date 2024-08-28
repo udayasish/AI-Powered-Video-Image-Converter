@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 
-function page() {
+function VideoUpload() {
   const [file, setFile] = useState<File | null>(null);
   const [title, setTitle] = useState<string>("");
   const [description, setDescription] = useState<string>("");
@@ -96,4 +96,4 @@ function page() {
   );
 }
 
-export default page;
+export default VideoUpload;
